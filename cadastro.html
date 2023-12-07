@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Cadastro e Opinião</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho com links para as páginas -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a class="active" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página de cadastro e opinião -->
+    <main>
+        <main>
+            <!-- Seção de Cadastro -->
+            <section id="cadastro">
+                <h2>Cadastro</h2>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        
+            <!-- Seção de Opinião -->
+            <section id="opiniao">
+                <h2>Opinião</h2>
+                <p>Deixe sua opinião sobre o site:</p>
+                <textarea id="mensagem" rows="4" cols="50" placeholder="Digite sua opinião"></textarea>
+                
+                <input type="submit" value="Enviar Opinião">
+            </section>
+        </main>
+        
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2023 Front-End</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+    <!-- Função para transição entre páginas -->
+    <script>
+        function slideTo(page) {
+            document.body.style.opacity = 0;
+            setTimeout(function() {
+                window.location.href = page;
+            }, 500);
+        }
+    </script>
+</body>
+</html>
+

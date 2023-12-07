@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho com links para as páginas -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a class="active" href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página de galeria de imagens -->
+    <main class="gallery">
+        <div class="card">
+            <img src="img/volei.jpeg" alt="Imagem 1">
+            <div class="card-info">
+                <h3>Voleibol</h3>
+                <p>Ana Beatriz, além de programadora tem como seu 
+                principal hobbie jogar vôlei, ela já percorreu 
+                inúmeros lugares do país e ganhou muitas medalhas, 
+                dentre elas:</p>
+                <nav>
+                    <ol>
+                        <li>Campeã brasileira escolar.</li>
+                        <li>Terceiro lugar do brasileiro escolar.</li>
+                        <li>Campeã brasileira de vôlei de praia.</li>
+                        <li>Campeã nordestina de clubes + Melhor jogadora do nordeste 2005.</li>
+                        <li>Bi campeã dos jogos escolares de Pernambuco.</li>
+                        <li>Vice campeã nordestina de praia.</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/friendss.jpeg" alt="Imagem 2">
+            <div class="card-info">
+                <h3>Rolês</h3>
+                <p>Para Gilberto, sair com amigos sempre foi uma das melhores formas 
+                    de recarregar as energias. Em momentos de estresse 
+                    ou quando tudo parece sobrecarregado, os rolês com 
+                    amigos são seu alívio. É onde risadas se tornam o 
+                    melhor remédio e momentos compartilhados se 
+                    transformam em memórias duradouras. Seja em uma noite 
+                    agitada ou apenas em um papo descontraído, os rolês 
+                    com amigos são o que lhe distraem quando está muito sobrecarregado. </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="img/sobrancelha.jpeg" alt="Imagem 3">
+            <div class="card-info">
+                <h3>Beleza</h3>
+                <p>Tayná Brito, além de estar cursando o segundo 
+                    período de Análise e Desenvolvimento de Sistemas, 
+                    é uma empreendedora no mundo da beleza. Com seu 
+                    próprio estúdio de estética, ela não só mergulha 
+                    nos desafios da tecnologia, mas também traz sua 
+                    paixão pelo cuidado pessoal para o mundo dos 
+                    negócios. Seu estúdio é um espaço onde a inovação 
+                    se encontra com a arte, proporcionando tratamentos 
+                    e cuidados personalizados que não só realçam a 
+                    beleza exterior, mas também promovem a 
+                    autoconfiança. Tayná equilibra habilmente sua 
+                    jornada acadêmica com a dedicação ao seu estúdio, 
+                    mostrando como é possível unir o mundo tecnológico com o universo da estética para criar um impacto positivo na vida das pessoas.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/praia.jpeg" alt="Imagem 4">
+            <div class="card-info">
+                <h3>Viagens</h3>
+                <p>Lucas Martins, entusiasta de tecnologia, é um 
+                viajante. Suas viagens constantes são fontes
+                de aprendizado e inspiração. Sua paixão por explorar 
+                novos lugares e culturas alimenta sua visão única na 
+                área de tecnologia, trazendo uma perspectiva 
+                diversificada para sua jornada.</p>
+            </div>
+        </div>
+        <!-- Adicione mais cards conforme necessário -->
+    </main>
+
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2023 Front-End</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+    <!-- Função para transição entre páginas -->
+    <script>
+        function slideTo(page) {
+            document.body.style.opacity = 0;
+            setTimeout(function() {
+                window.location.href = page;
+            }, 500);
+        }
+    </script>
+</body>
+</html>

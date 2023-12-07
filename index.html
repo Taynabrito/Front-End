@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho com links para as páginas -->
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Página Inicial</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página inicial -->
+    <section class="apresentacao">
+        <h1>Grupo Front-End</h1>
+        <p>Bem-vindo à nossa página de apresentação!</p>
+    </section>
+
+    <main>
+        <section class="membro">
+            <img src="img/bia.png" alt="Foto da Ana Beatriz Nunes">
+            <div class="info">
+                <h2>Ana Beatriz Nunes</h2>
+                <p>18 anos, cursando análise e desenvolvimento de 
+                sistemas na UNINASSAU Recife, formada em inglês pelo 
+                SENAC, tem facilidade nativa de Recife, tem como hobbie 
+                jogar vôlei, onde carrega várias medalhas e títulos de 
+                destaque, fazendo cursos online de programação em Java.</p>
+            </div>
+        </section>
+
+        <section class="membro">
+            <img src="img/joao-_lucas.png" alt="Foto de Lucas Martins">
+            <div class="info">
+                <h2>Lucas Martins</h2>
+                <p>18 anos, técnico em logística e estudante de 
+                    Análise e Desenvolvimento de Sistemas, está 
+                    cursando o seu segundo período na faculdade 
+                    UNINASSAU em Recife-PE. Possui conhecimento 
+                    na área de programação, marketing, arte e 
+                    logística, e tem o objetivo de conquistar seu 
+                    sucesso ao mesmo tempo em que possa contribuir 
+                    para o mundo naquilo que gosta de fazer.</p>
+            </div>
+        </section>
+
+        <section class="membro">
+            <img src="img/junior.png" alt="Foto de Gilberto Júnior">
+            <div class="info">
+                <h2>Gilberto Júnior</h2>
+                <p>19 anos, é um estudante de Análise e 
+                Desenvolvimento de Sistemas, originário de Carpina, 
+                tem um inglês intermediário e almeja se tornar um 
+                programador, focando em especializar-se em Python.</p>
+            </div>
+        </section>
+
+        <section class="membro">
+            <img src="img/tayna.png" alt="Foto de Tayná Brito">
+            <div class="info">
+                <h2>Tayná Brito</h2>
+                <p>20 anos, é uma estudante da área de Análise e 
+                    Desenvolvimento de Sistemas, está cursando o seu 
+                    segundo período na faculdade UNINASSAU em Recife-PE. 
+                    Domínio em linguagens de programação e almeja contribuir 
+                    significativamente para o avanço da tecnologia e 
+                    desenvolvimento de sistemas.</p>
+            </div>
+        </section>
+    </main>
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2023 Front-End</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+    <!-- Função para transição entre páginas -->
+    <script>
+        function slideTo(page) {
+            document.body.style.opacity = 0;
+            setTimeout(function() {
+                window.location.href = page;
+            }, 500);
+        }
+    </script>
+</body>
+</html>
+
+

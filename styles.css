@@ -1,0 +1,194 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c58080;
+    font-weight: bold;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para o link ativo */
+nav ul li a.active {
+    color: #ff0000; /* Cor desejada para o link ativo */
+}
+
+/*Explicação dos estilos CSS:
+
+header: Define o estilo para a seção do cabeçalho, especificando a cor de fundo, cor do texto e preenchimento.
+
+nav ul: Aplica estilo à lista de itens de navegação, removendo a formatação padrão da lista.
+
+nav ul li: Define os itens da lista como elementos em linha (inline) e adiciona um espaçamento à direita entre os itens.
+
+nav ul li a: Estiliza os links dentro da lista de navegação, removendo a decoração padrão dos links, definindo a cor do texto como branca e aumentando o peso da fonte.
+
+footer: Estiliza o rodapé, definindo cor de fundo, cor do texto, alinhamento central e espaçamento interno.
+
+
+Esses estilos são responsáveis pela aparência e formatação do cabeçalho e do rodapé do site, garantindo cores, espaçamento e alinhamento adequados.
+
+Se precisar de mais alguma explicação ou informação adicional sobre algum aspecto específico, estou à disposição!
+
+
+/*-----------------Pagina Iicial----------------------*/
+/* Estilos para o cabeçalho */
+header {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilos para cada seção de membro */
+.membro {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Estilos para a imagem do membro */
+.membro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Estilos para as informações do membro */
+.membro .info {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/*-----------------Galeria----------------------*/
+/* Estilos para a galeria de imagens */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilos para os cards */
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card-info {
+    text-align: center;
+}
+
+.card-info h3 {
+    margin: 5px 0;
+}
+
+.card-info p {
+    color: #666;
+}
+
+/*-----------------Cadastro----------------------*/
+/* Estilos para o formulário de cadastro */
+#cadastro {
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+label,
+input {
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a seção de opinião */
+#opiniao {
+    max-width: 500px;
+    margin: 0 auto;
+}
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
